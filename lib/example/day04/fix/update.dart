@@ -45,7 +45,7 @@ class _UpdateSate extends State<Update> { // 클래스명 앞에 _ 언더바는 
   TextEditingController  frequentController = TextEditingController();
 
 
-  void todoUpdate(  ) async{
+  void fixUpdate(  ) async{
     try{
       final sendData = {
         "fid" : fix['fid'],
@@ -90,7 +90,7 @@ class _UpdateSate extends State<Update> { // 클래스명 앞에 _ 언더바는 
             ),
 
             SizedBox( height: 20,) ,
-            OutlinedButton( onPressed: todoUpdate, child: Text("수정하기") ),
+            OutlinedButton( onPressed: fixUpdate, child: Text("수정하기") ),
           ],
         ),
       ),
